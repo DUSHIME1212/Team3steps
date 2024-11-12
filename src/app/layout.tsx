@@ -31,10 +31,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} scroll-smooth antialiased`}
       >
         <nav>
-          <Navbar/>
+          <Navbar />
         </nav>
         <AntdRegistry>{children}</AntdRegistry>
-        
+
       </body>
     </html>
   );
