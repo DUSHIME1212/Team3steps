@@ -18,11 +18,11 @@ const HouseListingsCard = () => {
             <h1 className="text-xl text-black font-semibold">{houses.subtitle}</h1>
             <p className="text-gray-500 uppercase text-lg">{houses?.price}</p>
           </div>
-          <div className="w-full flex">
-            <div className="w-1/2 grid hover:bg-black/10 duration-500 rounded-xl place-items-center outline-2 outline-destructive p-4">
+          <div className="w-full flex justify-between">
+            <div className="grid hover:bg-black/10 duration-500 rounded-xl outline-2 outline-destructive p-4">
               <FaWhatsapp />
             </div>
-            <div className="w-1/2 grid hover:bg-black/10 duration-500 rounded-xl place-items-center outline-2 outline-destructive p-4">
+            <div className="grid hover:bg-black/10 duration-500 rounded-xl outline-2 outline-destructive p-4">
               <MdOutlineLocalPhone />
             </div>
           </div>
