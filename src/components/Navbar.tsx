@@ -74,7 +74,7 @@ const Navbar = () => {
           >
             {links.map((link, index) => (
               <Link key={index} href={link.url}>
-                <Link href={link.url}>{link.label}</Link>
+                {link.label}
               </Link>
             ))}
           </div>
