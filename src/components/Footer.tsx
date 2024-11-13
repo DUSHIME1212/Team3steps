@@ -5,7 +5,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="w-full px-6 py-12 bg-zinc-100 text-black">
+        <footer className="w-full px-4 md:px-16 lg:px-32 py-12 bg-zinc-100 text-black">
             <div className="container mx-auto flex flex-wrap justify-between">
                 {/* <!-- Newsletter Signup --> */}
                 <div className="w-full sm:w-1/3 mb-8 sm:mb-0">

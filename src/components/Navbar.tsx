@@ -3,6 +3,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { Home, User, Menu, X } from "@geist-ui/icons";
+import { DialogDemo } from "./Model";
+import Addlistings from "./Addlistings";
 // import { Tabs } from "@geist-ui/core";
 
 const Navbar = () => {
@@ -55,11 +57,10 @@ const Navbar = () => {
 
         {/* Hamburger Menu Icon */}
         <div className="flex flex-row md:hidden">
-          <Button variant={"ghost"} className="w-full">
-            <Link href={"/login"} className="flex items-center w-full justify-center">
-              <User /> Login/Register
-            </Link>
-          </Button>
+          <div className="w-full flex items-center gap-2">
+              <User />
+              <DialogDemo/>
+          </div>
           <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? <X /> : <Menu />}
           </button>
@@ -82,15 +83,14 @@ const Navbar = () => {
 
         {/* Action Buttons */}
         <div className="hidden md:flex gap-4">
-          <Button variant={"ghost"}>
-            <Link href={"/login"} className="flex gap-2 items-center">
-              <User /> Login/Register
-            </Link>
-          </Button>
-          <Button>
+        <div className="w-full flex gap-2 items-center">
+              <User />
+              <DialogDemo/>
+          </div>
+          <div className="flex items-center gap-2">
             <Home />
-            Add Listing
-          </Button>
+            <Addlistings/>
+          </div>
         </div>
       </div>
     </nav>
