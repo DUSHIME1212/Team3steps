@@ -7,10 +7,10 @@ import Testinmonial from "@/components/Testinmonial";
 export default function Home() {
   return (
     <main className="">
-      <Hero/>
-      <About/>
-      <Listings/>
-      <Testinmonial/>
+      <Hero />
+      <About />
+      <Listings />
+      <Testinmonial />
     </main>
   );
 }
