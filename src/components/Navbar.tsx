@@ -80,7 +80,7 @@ const Navbar = () => {
               <User />
               <DialogDemo/>
           </div>
-          <div className="flex items-center bg-blue-500 rounded-xl text-white gap-2">
+          <div className="flex items-center w-fit min-w-[156px] justify-center px-2 bg-blue-500 rounded-xl text-white gap-2">
             <Home />
             <Addlistings/>
           </div>
