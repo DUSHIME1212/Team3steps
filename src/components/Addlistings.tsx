@@ -16,7 +16,7 @@ const Addlistings = () => {
   return (
     <div>
         <Dialog>
-  <DialogTrigger>Open</DialogTrigger>
+  <DialogTrigger>Add property</DialogTrigger>
   <DialogContent>
     <DialogHeader>
       <DialogTitle>Add a New Listing</DialogTitle>
