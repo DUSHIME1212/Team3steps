@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <nav className="flex flex-col w-full z-30 fixed bg-white shadow-lg">
       {/* Top */}
-      <div className="w-full flex justify-between items-center text-white bg-darkBlue px-2 py-2 md:px-16 lg:px-32">
+      <div className="w-full flex justify-between items-center text-white bg-blue-500 px-2 py-2 md:px-16 lg:px-32">
         <p className="uppercase text-sm">Kigali, RWANDA kk509st</p>
         <div className="flex flex-col md:flex-row lg:flex-row gap-0 md:gap-4 lg:gap-4 text-sm">
           <span>+250782454192</span>

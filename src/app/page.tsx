@@ -6,7 +6,7 @@ import Testinmonial from "@/components/Testinmonial";
 
 export default function Home() {
   return (
-    <main className="">
+    <main >
       <Hero />
       <About />
       <Listings />
