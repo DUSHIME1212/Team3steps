@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav className="flex flex-col w-full z-30 fixed bg-white shadow-lg">
       {/* Top */}
-      <div className="w-full flex justify-between items-center text-white bg-blue-500 px-2 py-2 md:px-16 lg:px-32">
+      <div className="w-full flex justify-between items-center text-white bg-darkBlue px-2 py-2 md:px-16 lg:px-32">
         <p className="uppercase text-sm">Kigali, RWANDA kk509st</p>
         <div className="flex flex-col md:flex-row lg:flex-row gap-0 md:gap-4 lg:gap-4 text-sm">
           <span>+250782454192</span>
@@ -31,7 +31,7 @@ const Navbar = () => {
       </div>
       <div className="flex justify-between px-8 items-center md:hidden lg:hidden">
         <div className="h-16 w-16 relative">
-          <Image src={'/3steps1.png'} alt="" className="object-contain" fill />
+          <Image src={'/logo3.png'} alt="" className="object-contain" fill />
         </div>
         {/* Hamburger Menu Icon */}
         <div className="flex items-center md:hidden">
@@ -87,7 +87,7 @@ const Navbar = () => {
             <User />
             <DialogDemo />
           </div>
-          <div className="flex items-center w-fit min-w-[156px] justify-center px-2 bg-blue-500 rounded-xl text-white gap-2">
+          <div className="flex items-center w-fit min-w-[156px] justify-center px-2 bg-darkBlue rounded-xl text-white gap-2">
             <Home />
             <Addlistings />
           </div>

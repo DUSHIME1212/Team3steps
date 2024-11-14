@@ -77,7 +77,7 @@ const Hero = () => {
               <Button variant={"outline"} className="py-6">
                 <Filter /> Advance Search
               </Button>
-              <Button size={"lg"} className="rounded-full bg-blue-500 py-6">
+              <Button size={"lg"} className="rounded-full  py-6">
                 <Search />
                 Search
               </Button>
@@ -111,7 +111,7 @@ const Hero = () => {
               <Button variant={"outline"} className="py-6">
                 <Filter /> Advance Search
               </Button>
-              <Button size={"lg"} className="rounded-full bg-blue-500 py-6">
+              <Button size={"lg"} className="rounded-full py-6">
                 <Search />
                 Search
               </Button>
