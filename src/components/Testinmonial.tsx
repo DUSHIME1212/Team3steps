@@ -44,7 +44,7 @@ const Testinmonial = () => {
           dignissim purus.
         </p>
       </div>
-      <div className="w-100 md:w-1/2 lg:w-1/2 min-h-96">
+      <div className="w-full md:w-1/2 lg:w-1/2 min-h-96">
         <Carousel
           autoplay
           dotPosition="right"
