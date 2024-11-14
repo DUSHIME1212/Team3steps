@@ -31,7 +31,7 @@ const Navbar = () => {
       </div>
       <div className="flex justify-between px-8 items-center md:hidden lg:hidden">
         <div className="h-16 w-16 relative">
-          <Image src={'/3steps1.png'} alt="" className="object-contain" fill />
+          <Image src={'/logo3.png'} alt="" className="object-contain" fill />
         </div>
         {/* Hamburger Menu Icon */}
         <div className="flex items-center md:hidden">
@@ -87,7 +87,7 @@ const Navbar = () => {
             <User />
             <DialogDemo />
           </div>
-          <div className="flex items-center w-fit min-w-[156px] justify-center px-2 bg-blue-500 rounded-xl text-white gap-2">
+          <div className="flex items-center w-fit min-w-[156px] justify-center px-2 bg-darkBlue rounded-xl text-white gap-2">
             <Home />
             <Addlistings />
           </div>
