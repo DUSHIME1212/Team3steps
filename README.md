@@ -1,5 +1,8 @@
 Welcome to 3steps, a Next.js project designed to assist individuals in finding their perfect home. This project leverages the power of Next.js to provide a seamless user experience, ensuring that users can easily navigate through the website and find the properties that best suit their needs.
 
+![alt img](/public/1.png)
+
+
 ## Navigation
 
 The website is divided into several sections, each catering to a specific aspect of real estate exploration:
@@ -71,3 +74,5 @@ The **REAL ESTATE** section is the core of the website, where users can find pro
 
 **Copyright**: A copyright notice indicating ownership and rights.
 
+
+![alt img](/public/2.png)

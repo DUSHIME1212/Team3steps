@@ -1,10 +1,10 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import { Button } from "./ui/button";
 import { Home, User, Menu, X } from "@geist-ui/icons";
 import { DialogDemo } from "./Model";
 import Addlistings from "./Addlistings";
+import Image from "next/image";
 // import { Tabs } from "@geist-ui/core";
 
 const Navbar = () => {
@@ -30,28 +30,21 @@ const Navbar = () => {
       </div>
 
       {/* Main Navbar */}
-      <div className="px-2 flex justify-between items-start py-4 md:px-16 lg:px-32">
-        <div className="flex flex-col">
-          <h1 className="text-3xl font-bold px-8 md:px-0 lg:px-0">3steps</h1>
+      <div className="px-2 flex justify-between items-center py-4 md:px-16 lg:px-32">
+        <div className="flex flex-col items-center">
+          <div className=" h-12 w-24 relative">
+            <Image src={'/3steps1.png'} alt="" className="object-contain" fill/>
+          </div>
 
           {/* Action Buttons for Mobile */}
           {isMobileMenuOpen && (
             <div className="flex flex-col items-center gap-2 md:hidden py-4">
-              <div
-                className={`flex-col md:flex-row flex md:flex gap-y-2 text-lg font-normal items-start ${isMobileMenuOpen ? "flex" : "hidden md:flex"
-                  }`}
-              >
+              <div className="absolute flex flex-col gap-4 top-56 bg-white p-8 rounded-2xl text-2xl">
                 {links.map((link, index) => (
                   <Link key={index} href={link.url} className="text-justify">{link.label}</Link>
                 ))}
               </div>
-
-              <Button className="w-full flex">
-                <Home />
-                Add Listing
-              </Button>
             </div>
-
           )}
         </div>
 
@@ -87,7 +80,7 @@ const Navbar = () => {
               <User />
               <DialogDemo/>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center w-fit min-w-[156px] justify-center px-2 bg-blue-500 rounded-xl text-white gap-2">
             <Home />
             <Addlistings/>
           </div>

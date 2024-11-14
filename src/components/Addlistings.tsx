@@ -16,7 +16,7 @@ const Addlistings = () => {
   return (
     <div>
         <Dialog>
-  <DialogTrigger>Open</DialogTrigger>
+  <DialogTrigger>Add property</DialogTrigger>
   <DialogContent>
     <DialogHeader>
       <DialogTitle>Add a New Listing</DialogTitle>
@@ -49,9 +49,10 @@ const Addlistings = () => {
                   <SelectItem value="5">5</SelectItem>
                 </SelectContent>
               </Select>
+              <Input type="file" name="image" accept="image/*" />
       </form>
     </DialogHeader>
-    <Button variant={"outline"}>Pay Now</Button>
+    <Button variant={"default"}>Pay via Momo</Button>
   </DialogContent>
   <DialogFooter>
   </DialogFooter>
