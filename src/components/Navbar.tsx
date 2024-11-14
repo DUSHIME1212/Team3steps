@@ -12,9 +12,9 @@ const Navbar = () => {
 
   const links = [
     { label: "Home", url: "/" },
-    { label: "Cities", url: "#cities" },
+    { label: "About us", url: "#about" },
     { label: "Listings", url: "#listings" },
-    { label: "Policy", url: "/#olicy" },
+    { label: "Testimonies", url: "/#test" },
     { label: "Blog", url: "#blog" },
   ];
 
