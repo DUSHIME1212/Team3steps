@@ -5,7 +5,7 @@ import { MdOutlineLocalPhone } from "react-icons/md";
 import { house } from "@/data/house";
 const HouseListingsCard = () => {
   return (
-    <div id="listings">
+    <>
       {house.map((houses) => (
         <div key={houses.id} className="min-w-[356px] min-h-72 p-2 overflow-clip">
           <div className="min-h-56 relative rounded-xl overflow-clip">
@@ -28,7 +28,7 @@ const HouseListingsCard = () => {
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 };
 

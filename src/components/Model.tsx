@@ -25,24 +25,24 @@ export function DialogDemo() {
             <TabsTrigger className="w-1/2 rounded-full p-4" value="signup">Sign up</TabsTrigger>
           </TabsList>
           <TabsContent value="login">
-            <DialogHeader className="my-8">
+            <DialogHeader className="my-4">
               <DialogTitle>Log in</DialogTitle>
               <DialogDescription>
                 Enter your credentials to log in.
               </DialogDescription>
             </DialogHeader>
             <div className="grid gap-4 py-4">
-              <div className="grid grid-rows-2 items-start">
+              <div>
                 <Label htmlFor="email" className="text-left">
                   Email
                 </Label>
                 <Input
                   id="email"
                   placeholder="example@example.com"
-                  className="col-span-3"
+                  className="col-span-3 py-6"
                 />
               </div>
-              <div className="grid grid-rows-2 items-start">
+              <div>
                 <Label htmlFor="password" className="text-left">
                   Password
                 </Label>
@@ -50,56 +50,56 @@ export function DialogDemo() {
                   id="password"
                   type="password"
                   placeholder="Your password"
-                  className="col-span-3"
+                  className="col-span-3 py-6"
                 />
               </div>
             </div>
             <DialogFooter className="w-full">
-              <Button type="submit" className="w-full">Log in</Button>
+              <Button type="submit" className="w-full p-6">Log in</Button>
             </DialogFooter>
           </TabsContent>
           <TabsContent value="signup">
-            <DialogHeader className="my-8">
+            <DialogHeader className="mt-6">
               <DialogTitle>Sign up</DialogTitle>
               <DialogDescription >
                 Create a new account.
               </DialogDescription>
             </DialogHeader>
-            <div className="grid gap-8 py-4">
-              <div className="grid grid-rows-2 items-start">
+            <div className="grid gap-6 pt-4">
+              <div className="">
                 <Label htmlFor="name" className="text-left">
                   Name
                 </Label>
                 <Input
                   id="name"
                   placeholder="Your name"
-                  className="col-span-3"
+                  className="col-span-3 py-6"
                 />
               </div>
-              <div className="ggrid grid-rows-2 items-start">
-                <Label htmlFor="email" className="text-left">
+              <div>
+                <Label htmlFor="email" className="text-left mb-8">
                   Email
                 </Label>
                 <Input
                   id="email"
                   placeholder="example@example.com"
-                  className="col-span-3"
+                  className="col-span-3 py-6"
                 />
               </div>
-              <div className="grid grid-rows-2 items-start gap-">
-                <Label htmlFor="password" className="text-left">
+              <div className="mb-8">
+                <Label htmlFor="password" className="text-left mb-8">
                   Password
                 </Label>
                 <Input
                   id="password"
                   type="password"
                   placeholder="Your password"
-                  className="col-span-3"
+                  className="col-span-3 py-6"
                 />
               </div>
             </div>
             <DialogFooter>
-              <Button type="submit" className="w-full">Sign up</Button>
+              <Button type="submit" className="w-full p-6">Sign up</Button>
             </DialogFooter>
           </TabsContent>
         </Tabs>
