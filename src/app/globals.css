@@ -83,3 +83,8 @@ html {
 ::-webkit-scrollbar-track {
   display: none;
 }
+.wrapper:hover > :not(:hover){
+  opacity: 0.4;
+  filter: blur(1px);
+  transition: all 120ms ;
+}

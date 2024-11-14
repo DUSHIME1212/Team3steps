@@ -69,11 +69,11 @@ const Navbar = () => {
         {/* Links - Mobile & Desktop */}
         {!isMobileMenuOpen && (
           <div
-            className={`flex-col md:flex-row flex md:flex gap-x-8 text-lg font-normal items-center ${isMobileMenuOpen ? "flex" : "hidden md:flex"
+            className={`flex-col md:flex-row wrapper flex md:flex gap-x-8 text-lg font-normal items-center ${isMobileMenuOpen ? "flex" : "hidden md:flex"
               }`}
           >
             {links.map((link, index) => (
-              <Link key={index} href={link.url}>
+              <Link key={index}  href={link.url}>
                 {link.label}
               </Link>
             ))}
