@@ -1,13 +1,13 @@
 import React from 'react'
 import {
-    Dialog,
-    DialogContent,
-    DialogDescription,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger,
-    DialogFooter,
-  } from "@/components/ui/dialog"
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+  DialogFooter,
+} from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select"
@@ -15,16 +15,16 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@
 const Addlistings = () => {
   return (
     <div>
-        <Dialog>
-  <DialogTrigger>Add property</DialogTrigger>
-  <DialogContent>
-    <DialogHeader>
-      <DialogTitle>Add a New Listing</DialogTitle>
-      <DialogDescription>
-        Please fill out the form below to add a new listing.
-      </DialogDescription>
-      <form action="">
-      <Input placeholder="Kigali, Rwanda" type="text" className="py-6" name="location" />
+      <Dialog>
+        <DialogTrigger>Add property</DialogTrigger>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Add a New Listing</DialogTitle>
+            <DialogDescription className='py-4'> 
+              Please fill out the form below to add a new listing.
+            </DialogDescription>
+            <form className='flex flex-col gap-y-6' action="">
+              <Input placeholder="Kigali, Rwanda" type="text" className="py-6" name="location" />
               <Select>
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Property Type" />
@@ -50,13 +50,13 @@ const Addlistings = () => {
                 </SelectContent>
               </Select>
               <Input type="file" name="image" accept="image/*" />
-      </form>
-    </DialogHeader>
-    <Button variant={"default"}>Pay via Momo</Button>
-  </DialogContent>
-  <DialogFooter>
-  </DialogFooter>
-</Dialog>
+            </form>
+          </DialogHeader>
+          <Button variant={"default"}>Pay via Momo</Button>
+        </DialogContent>
+        <DialogFooter>
+        </DialogFooter>
+      </Dialog>
 
     </div>
   )

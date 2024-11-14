@@ -35,7 +35,7 @@ const Testinmonial = () => {
     },
   ];
   return (
-    <div className="w-full p-8 md:px-16 flex flex-col md:flex-row lg:flex-row items-center lg:px-32 min-h-96">
+    <div id="test" className="w-full p-8 md:px-16 flex flex-col md:flex-row lg:flex-row items-center lg:px-32 min-h-96">
       <div className="mb-4 flex w-100 md:w-1/2 lg:w-1/2 flex-col gap-4">
         <span className="font-semibold text-blue-500">TESTIMONIALS</span>
         <h1 className="text-2xl md:text-5xl lg:text-5xl font-semibold">Look What Our Customers Say!</h1>

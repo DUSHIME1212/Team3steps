@@ -12,7 +12,7 @@ const About = () => {
   const img3 =
     "https://d33wubrfki0l68.cloudfront.net/8a595f4793ed112a9a00389b1c99eb538e67eb39/84a3b/assets/images/3.jpg";
   return (
-    <div className="min-h-full md:min-h-96 lg:min-h-96 p-8 md:px-16 flex lg:px-32">
+    <div id="about" className="min-h-full md:min-h-96 lg:min-h-96 p-8 md:px-16 flex lg:px-32">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
         <div>
           <div className="mb-4 flex flex-col gap-4">

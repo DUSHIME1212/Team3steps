@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import React, { useState } from "react";
 import { Home, User, Menu, X } from "@geist-ui/icons";
@@ -11,10 +12,10 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const links = [
-    { label: "Home", url: "/" },
-    { label: "Cities", url: "#cities" },
+    { label: "Home", url: "#home" },
+    { label: "About us", url: "#about" },
     { label: "Listings", url: "#listings" },
-    { label: "Policy", url: "/#olicy" },
+    { label: "Testimonies", url: "/#test" },
     { label: "Blog", url: "#blog" },
   ];
 
@@ -28,35 +29,41 @@ const Navbar = () => {
           <span>support@alustudent.com</span>
         </div>
       </div>
-
-      {/* Main Navbar */}
-      <div className="px-2 flex justify-between items-center py-4 md:px-16 lg:px-32">
-        <div className="flex flex-col items-center">
-          <div className=" h-12 w-24 relative">
-            <Image src={'/3steps1.png'} alt="" className="object-contain" fill/>
-          </div>
-
-          {/* Action Buttons for Mobile */}
-          {isMobileMenuOpen && (
-            <div className="flex flex-col items-center gap-2 md:hidden py-4">
-              <div className="absolute flex flex-col gap-4 top-56 bg-white p-8 rounded-2xl text-2xl">
-                {links.map((link, index) => (
-                  <Link key={index} href={link.url} className="text-justify">{link.label}</Link>
-                ))}
-              </div>
-            </div>
-          )}
+      <div className="flex justify-between px-8 items-center md:hidden lg:hidden">
+        <div className="h-16 w-16 relative">
+          <Image src={'/3steps1.png'} alt="" className="object-contain" fill />
         </div>
-
         {/* Hamburger Menu Icon */}
-        <div className="flex flex-row md:hidden">
-          <div className="w-full flex items-center gap-2">
-              <User />
-              <DialogDemo/>
-          </div>
+        <div className="flex items-center md:hidden">
+          <User />
+          <DialogDemo />
           <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? <X /> : <Menu />}
           </button>
+        </div>
+      </div>
+
+      {/* Main Navbar */}
+      <div className="px-8 flex items-center md:px-16 lg:px-16 justify-between">
+        <div className="flex flex-col items-center">
+
+          <div className="h-24 w-24 relative hidden md:flex lg:flex">
+            <Image src={'/3steps1.png'} alt="" className="object-contain" fill />
+          </div>
+          {/* Action Buttons for Mobile */}
+          {isMobileMenuOpen && (
+            <div className="flex flex-col items-center gap-2 md:hidden">
+              <div className="w-full flex flex-col gap-4 py-2 bg-white rounded-2xl">
+                {links.map((link, index) => (
+                  <Link key={index} href={link.url} className="text-justify text-sm">{link.label}</Link>
+                ))}
+                <div className="flex items-center space-x-2 w-fit min-w-[156px] justify-center p-4 bg-blue-500 rounded-xl text-white">
+                  <Home />
+                  <Addlistings />
+                </div>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Links - Mobile & Desktop */}
@@ -75,14 +82,14 @@ const Navbar = () => {
 
 
         {/* Action Buttons */}
-        <div className="hidden md:flex gap-4">
-        <div className="w-full flex gap-2 items-center">
-              <User />
-              <DialogDemo/>
+        <div className="hidden md:flex">
+          <div className="w-full flex gap-2 items-center">
+            <User />
+            <DialogDemo />
           </div>
           <div className="flex items-center w-fit min-w-[156px] justify-center px-2 bg-blue-500 rounded-xl text-white gap-2">
             <Home />
-            <Addlistings/>
+            <Addlistings />
           </div>
         </div>
       </div>
